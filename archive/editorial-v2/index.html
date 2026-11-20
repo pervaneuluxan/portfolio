@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pərvanə Uluxanova — Front-end developer</title>
+    <meta name="description" content="Front-end developer in Baku building accessible, fast React and Next.js products — from SaaS architecture to hotel and campaign sites." />
+    <meta name="theme-color" content="#13100e" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+    <script>
+      // Pick the theme before first paint so the sky never flashes the wrong colour.
+      try {
+        const saved = localStorage.getItem('theme');
+        const theme = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'day' : 'night');
+        document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="top">
+      <a class="brand" href="#top" aria-label="Pərvanə Uluxanova, back to top">P<span>U</span></a>
+      <button class="theme" type="button" aria-label="Switch to day mode" aria-pressed="false">
+        <span class="orb" aria-hidden="true"><i></i></span>
+        <span class="theme-label label" aria-hidden="true"><b data-t="day">Day</b> / <b data-t="night">Night</b></span>
+      </button>
+    </header>
+
+    <nav class="rail" aria-label="Sections">
+      <ol>
+        <li><a href="#top" data-spy="top">00</a></li>
+        <li><a href="#about" data-spy="about">01</a></li>
+        <li><a href="#work" data-spy="work">02</a></li>
+        <li><a href="#experience" data-spy="experience">03</a></li>
+        <li><a href="#craft" data-spy="craft">04</a></li>
+        <li><a href="#contact" data-spy="contact">05</a></li>
+      </ol>
+    </nav>
+
+    <main id="main">
+      <!-- 00 Hero: sticky sky scene, intro hands over to proof -->
+      <section class="hero" id="top" aria-label="Introduction">
+        <div class="hero-sticky">
+          <canvas class="sky" aria-hidden="true"></canvas>
+          <div class="hero-shade" aria-hidden="true"></div>
+
+          <div class="hero-intro">
+            <h1 class="hero-name"><span class="line"><span>Pərvanə</span></span><span class="line"><span>Uluxanova</span></span></h1>
+            <p class="label tan reveal-soft">Front-end developer · Baku</p>
+            <p class="hero-lede serif reveal-soft">I build fast, accessible interfaces in React and Next.js — from a compliance SaaS architected from scratch to hotel, resort and campaign sites people actually use.</p>
+            <a class="pill reveal-soft" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="hero-proof" aria-label="Selected proof">
+            <p class="label proof-head"><span>Selected proof</span><i aria-hidden="true"></i><span>Production scale</span></p>
+            <dl class="stats">
+              <div><dt class="stat" data-count="5" data-word="Five">Five</dt><dd class="label">Years of production<br />front-end</dd></div>
+              <div><dt class="stat" data-count="11">11</dt><dd class="label">Live sites in<br />this index</dd></div>
+              <div><dt class="stat">WCAG</dt><dd class="label">Accessibility tooling<br />shipped to customers</dd></div>
+            </dl>
+            <p class="serif proof-body">At Gocreative I built the frontend architecture of Corpowid — an accessibility, consent and compliance platform — from scratch, and shipped customer-facing sites for hotels, developers, public institutions and brands across the region.</p>
+            <a class="pill" href="#work">See the work <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <p class="hero-hint label" aria-hidden="true">Scroll</p>
+        </div>
+      </section>
+
+      <!-- 01 About -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <p class="kicker label"><span class="num">01</span><i aria-hidden="true"></i><span>Background &amp; working style</span></p>
+        <h2 class="display" id="about-title">
+          <span class="line"><span>A front-end developer</span></span>
+          <span class="line accent"><span>who sweats the details</span></span>
+        </h2>
+
+        <div class="marquee label" aria-label="Disciplines">
+          <div class="marquee-track">
+            <span>React</span><span>TypeScript</span><span>Next.js</span><span>Redux Toolkit</span><span>Zustand</span><span>Tailwind CSS</span><span>SCSS</span><span>GSAP</span><span>WCAG</span><span>Jest</span><span>Playwright</span><span>Figma-to-code</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy serif reveal">
+            <p class="dropcap">Nearly five years in, I still care most about the part of the product people touch. I like reusable component systems, predictable state, and catching performance bottlenecks before they ship.</p>
+            <p>I work closely with designers and backend engineers, review code with an eye for risk, and write the Jest and Playwright tests that let a team move without fear. Accessibility isn’t a checklist at the end — it’s how the components are built from the start.</p>
+          </div>
+
+          <aside class="vitals reveal" aria-labelledby="vitals-title">
+            <header><h3 id="vitals-title">Vitals</h3><span class="label">Vol. 05 · ’26</span></header>
+            <dl>
+              <div><dt class="label">Most recently</dt><dd><b>Front-End Developer</b><span>Gocreative · Corpowid product</span></dd></div>
+              <div><dt class="label">Before that</dt><dd><b>Agency client work</b><span>Hospitality, real estate, government, brands</span></dd></div>
+              <div><dt class="label">Based in</dt><dd><b>Baku, Azerbaijan</b><span>40.4093° N · 49.8671° E</span></dd></div>
+              <div><dt class="label">Focus</dt><dd><b>Accessibility · Performance</b><span>Component architecture, testing</span></dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="years reveal">
+          <h3 class="years-name"><span class="slash">/</span> <em>Pərvanə Uluxanova</em> <span class="label">Front-end developer</span></h3>
+          <p class="label tan">Through the years</p>
+          <ol class="timeline">
+            <li><span class="yr">’15</span><span>Computer Engineering · Azerbaijan Technical University</span></li>
+            <li><span class="yr">’19</span><span>Graduated in Computer Engineering</span></li>
+            <li><span class="yr">’21</span><span>Matrix Academy front-end course · mentored the next cohort</span></li>
+            <li><span class="yr">’21</span><span>Joined Gocreative · agency client projects</span></li>
+            <li><span class="yr">’24</span><span>Corpowid · frontend architecture from scratch</span></li>
+            <li><span class="yr">’26</span><span>Art Riverfront · latest launch</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 02 Work -->
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <p class="kicker label"><span class="num">02</span><i aria-hidden="true"></i><span>Selected work</span></p>
+        <h2 class="display" id="work-title">
+          <span class="line"><span>Eleven sites, shipped</span></span>
+          <span class="line accent"><span>and still running.</span></span>
+        </h2>
+        <p class="work-note serif reveal">A cross-section of production work — boutique hotels and resorts, an accessibility SaaS, a state cultural reserve, a job-search tracker of my own, a law firm, a holding and a national campaign. Each one is live; open any card to visit it.</p>
+        <ol class="cards"></ol>
+      </section>
+
+      <!-- 03 Experience -->
+      <section class="section experience" id="experience" aria-labelledby="exp-title">
+        <p class="kicker label"><span class="num">03</span><i aria-hidden="true"></i><span>Experience</span></p>
+        <h2 class="display" id="exp-title">
+          <span class="line"><span>Five years of</span></span>
+          <span class="line accent"><span>production front-end.</span></span>
+        </h2>
+        <ol class="roles">
+          <li class="role reveal">
+            <span class="roman">I.</span>
+            <div><h3>Front-End Developer</h3><p class="label tan">Architecture from scratch</p></div>
+            <p class="label">Gocreative · Corpowid, internal startup product</p>
+            <p class="label when">2024 — 2026</p>
+          </li>
+          <li class="role reveal">
+            <span class="roman">II.</span>
+            <div><h3>Front-End Developer</h3><p class="label tan">Agency client projects</p></div>
+            <p class="label">Gocreative · global digital design agency</p>
+            <p class="label when">2021 — 2026</p>
+          </li>
+          <li class="role reveal">
+            <span class="roman">III.</span>
+            <div><h3>Mentor</h3><p class="label tan">Front-end course</p></div>
+            <p class="label">Matrix Academy</p>
+            <p class="label when">2021</p>
+          </li>
+        </ol>
+
+        <article class="role-detail reveal">
+          <span class="big-roman" aria-hidden="true">I</span>
+          <div>
+            <h3>Front-End Developer</h3>
+            <p class="role-where"><em>Gocreative · Corpowid</em></p>
+            <div class="serif">
+              <p>Built the frontend architecture of Corpowid from scratch, making scalable structure and maintainability the foundation of the codebase, with reusable UI components that keep the product responsive and fast.</p>
+              <p>Designed and delivered the accessibility solutions that help customers make their websites WCAG-compliant — deep, hands-on work in accessibility, performance and privacy — in close collaboration with backend engineers and UI/UX designers.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 04 Craft -->
+      <section class="section craft" id="craft" aria-labelledby="craft-title">
+        <p class="kicker label"><span class="num">04</span><i aria-hidden="true"></i><span>Craft</span></p>
+        <h2 class="display" id="craft-title">
+          <span class="line"><span>The toolkit,</span></span>
+          <span class="line accent"><span>kept sharp.</span></span>
+        </h2>
+        <dl class="skills">
+          <div class="reveal"><dt class="label tan">Core</dt><dd>React, TypeScript, Next.js, JavaScript (ES6+), HTML5, CSS3, responsive design</dd></div>
+          <div class="reveal"><dt class="label tan">Architecture</dt><dd>Reusable component libraries, scalable frontend structure, component-driven design</dd></div>
+          <div class="reveal"><dt class="label tan">State</dt><dd>Redux Toolkit, Zustand, Context API</dd></div>
+          <div class="reveal"><dt class="label tan">Styling</dt><dd>Tailwind CSS, SCSS, GSAP, Figma-to-code implementation</dd></div>
+          <div class="reveal"><dt class="label tan">Quality</dt><dd>Performance optimisation, WCAG-compliant solutions, Jest, React Testing Library, Playwright</dd></div>
+          <div class="reveal"><dt class="label tan">Process</dt><dd>Webpack, Vite, Git, JIRA, Scrum, code reviews, UAT</dd></div>
+        </dl>
+        <blockquote class="aside serif reveal">This page practises what it preaches: semantic landmarks, full keyboard support, visible focus, a theme that follows your system, and motion that steps aside when you ask it to.</blockquote>
+      </section>
+
+      <!-- 05 Contact -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <p class="kicker label"><span class="num">05</span><i aria-hidden="true"></i><span>Contact</span></p>
+        <h2 class="display huge" id="contact-title">
+          <span class="line"><span>Let’s build</span></span>
+          <span class="line accent"><span>what’s next.</span></span>
+        </h2>
+        <div class="contact-row reveal">
+          <a class="pill big" href="mailto:parvanauluxanova@gmail.com">parvanauluxanova@gmail.com <span aria-hidden="true">→</span></a>
+          <a class="pill ghost" href="https://github.com/pervaneuluxan" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="pill ghost" href="https://www.linkedin.com/in/pervane-uluxanova-8309a3202/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <footer class="foot label">
+          <span>© 2026 Pərvanə Uluxanova</span>
+          <span>Baku · 40.4093° N · 49.8671° E</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

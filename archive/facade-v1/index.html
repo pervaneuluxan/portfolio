@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pərvanə Uluxanova — Front-end developer</title>
+    <meta name="description" content="Front-end developer in Baku. Selected work in hospitality, accessibility SaaS and campaign sites, presented as a kinetic facade." />
+    <meta name="theme-color" content="#0c0b0a" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#index-list">Skip to project list</a>
+
+    <header class="top">
+      <button class="brand" type="button" data-goto="0" aria-label="Back to start">Pərvanə Uluxanova</button>
+      <p class="top-role"><span>Front-end developer</span><span class="dot" aria-hidden="true"></span><span>Baku</span></p>
+      <nav class="top-nav" aria-label="Primary">
+        <button type="button" data-open="index" aria-haspopup="dialog">Index</button>
+        <button type="button" data-open="about" aria-haspopup="dialog">About</button>
+        <a href="mailto:parvanauluxanova@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="sr-only">Pərvanə Uluxanova, front-end developer. Selected work.</h1>
+
+      <section class="stage" aria-roledescription="carousel" aria-label="Selected work">
+        <div class="frame" aria-hidden="true">
+          <i class="mark tl"></i><i class="mark tr"></i><i class="mark bl"></i><i class="mark br"></i>
+        </div>
+        <canvas class="gl" aria-hidden="true"></canvas>
+        <img class="fallback" alt="" hidden />
+        <button class="hit" type="button" aria-label="Open current project"></button>
+      </section>
+
+      <aside class="rail" aria-label="Projects"><ol class="ticks"></ol></aside>
+
+      <div class="caption">
+        <p class="counter mono" aria-hidden="true"><span class="counter-now">00</span><span class="counter-sep">/</span><span class="counter-all">10</span></p>
+        <h2 class="title" aria-live="off"></h2>
+        <div class="meta">
+          <p class="meta-line mono"></p>
+          <div class="meta-actions"></div>
+        </div>
+      </div>
+
+      <p class="hint mono" aria-hidden="true"><span class="hint-desk">Scroll, drag or ← → · Brush the slats</span><span class="hint-touch">Swipe to turn the facade</span></p>
+      <p class="coords mono" aria-hidden="true">40.4093° N — 49.8671° E</p>
+      <p class="sr-only" aria-live="polite" id="announcer"></p>
+    </main>
+
+    <dialog class="sheet index" id="index" aria-labelledby="index-title">
+      <div class="sheet-inner">
+        <header class="sheet-head">
+          <h2 id="index-title" class="mono">Index — selected work</h2>
+          <button class="close mono" type="button" data-close>Close</button>
+        </header>
+        <ol class="index-list" id="index-list"></ol>
+      </div>
+    </dialog>
+
+    <dialog class="sheet detail" id="detail" aria-labelledby="detail-title">
+      <div class="sheet-inner">
+        <header class="sheet-head">
+          <p class="mono detail-num"></p>
+          <button class="close mono" type="button" data-close>Close</button>
+        </header>
+        <h2 id="detail-title" class="detail-title"></h2>
+        <p class="detail-cat mono"></p>
+        <p class="detail-note"></p>
+        <ul class="detail-tags mono" aria-label="Focus"></ul>
+        <div class="detail-actions">
+          <a class="btn primary" target="_blank" rel="noopener">Visit live site <span aria-hidden="true">↗</span></a>
+          <button class="btn" type="button" data-step="1">Next project <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="sheet about" id="about" aria-labelledby="about-title">
+      <div class="sheet-inner">
+        <header class="sheet-head">
+          <p class="mono">About</p>
+          <button class="close mono" type="button" data-close>Close</button>
+        </header>
+        <h2 id="about-title" class="about-lead">I build the part of the product people actually touch: <em>fast, accessible, and built to last.</em></h2>
+        <p class="about-body">Front-end developer with nearly five years of React, TypeScript and Next.js. At Gocreative I built the frontend architecture of Corpowid from scratch and shipped WCAG-compliant accessibility tooling for its customers, alongside customer-facing sites for hotels, developers, clinics and brands.</p>
+        <dl class="about-grid">
+          <div><dt class="mono">Core</dt><dd>React, TypeScript, Next.js, JavaScript, HTML, CSS</dd></div>
+          <div><dt class="mono">Architecture</dt><dd>Component libraries, scalable frontend structure</dd></div>
+          <div><dt class="mono">State</dt><dd>Redux Toolkit, Zustand, Context API</dd></div>
+          <div><dt class="mono">Styling</dt><dd>Tailwind CSS, SCSS, GSAP, Figma-to-code</dd></div>
+          <div><dt class="mono">Quality</dt><dd>Performance, WCAG accessibility, Jest, RTL, Playwright</dd></div>
+          <div><dt class="mono">Experience</dt><dd>Gocreative, 2021 — 2026<br />Matrix Academy mentor</dd></div>
+        </dl>
+        <p class="about-a11y mono">This page is keyboard-navigable, screen-reader friendly and respects reduced motion. Try Tab, ← → and Esc.</p>
+        <div class="detail-actions">
+          <a class="btn primary" href="mailto:parvanauluxanova@gmail.com">parvanauluxanova@gmail.com</a>
+          <a class="btn" href="https://github.com/pervaneuluxan" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/pervane-uluxanova-8309a3202/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

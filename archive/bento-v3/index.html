@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pərvanə Uluxanova — Front-end developer</title>
+    <meta name="description" content="Front-end developer in Baku building accessible, fast React and Next.js products — from SaaS architecture to hotel and campaign sites." />
+    <meta name="theme-color" content="#09090b" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="glow" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <header class="nav-wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#top" aria-label="Pərvanə Uluxanova, back to top"><span>P</span><span>U</span></a>
+        <ul>
+          <li><a href="#work" data-spy="work">Work</a></li>
+          <li><a href="#about" data-spy="about">About</a></li>
+          <li><a href="#experience" data-spy="experience">Experience</a></li>
+          <li><a href="#contact" data-spy="contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-sm btn-light" href="mailto:parvanauluxanova@gmail.com">Email me</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Intro grid -->
+      <section class="bento intro" id="top" aria-label="Introduction">
+        <article class="tile hero t-8 r-2">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <p class="chip"><span class="pulse" aria-hidden="true"></span>Front-end developer · Baku</p>
+          <h1 class="hero-name">Pərvanə<br />Uluxanova</h1>
+          <p class="hero-lede">I build fast, accessible interfaces in React and Next.js — from a compliance SaaS architected from scratch to hotel, resort and campaign sites people actually use.</p>
+          <div class="row">
+            <a class="btn btn-light" href="#work">See the work <span aria-hidden="true">↓</span></a>
+            <a class="btn" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="tile clock t-4" aria-labelledby="clock-label">
+          <p class="mono dim" id="clock-label">Local time · Baku</p>
+          <p class="clock-time" aria-live="off"><time class="js-time">--:--</time><span class="mono dim js-zone">GMT+4</span></p>
+          <p class="mono dim clock-foot"><span class="js-daypart">—</span><span>40.41° N · 49.87° E</span></p>
+          <div class="sun" aria-hidden="true"><i class="js-sun"></i></div>
+        </article>
+
+        <article class="tile stat t-2">
+          <p class="stat-num"><span class="js-count" data-to="5">5</span><small>yrs</small></p>
+          <p class="mono dim">Production front-end</p>
+        </article>
+        <article class="tile stat t-2">
+          <p class="stat-num"><span class="js-count" data-to="11">11</span></p>
+          <p class="mono dim">Live sites below</p>
+        </article>
+
+        <article class="tile stack t-4" aria-labelledby="stack-label">
+          <p class="mono dim" id="stack-label">Stack</p>
+          <div class="marquee" aria-hidden="true">
+            <div class="marquee-row"><span>React</span><span>TypeScript</span><span>Next.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>SCSS</span><span>GSAP</span></div>
+            <div class="marquee-row rev"><span>Redux Toolkit</span><span>Zustand</span><span>Jest</span><span>Playwright</span><span>Vite</span><span>Figma</span><span>WCAG</span></div>
+          </div>
+          <p class="sr-only">React, TypeScript, Next.js, JavaScript, Tailwind CSS, SCSS, GSAP, Redux Toolkit, Zustand, Jest, Playwright, Vite, Figma, WCAG.</p>
+        </article>
+
+        <article class="tile a11y t-4" aria-labelledby="a11y-title">
+          <div class="a11y-badge" aria-hidden="true">AA</div>
+          <h2 class="tile-title" id="a11y-title">Accessible by default</h2>
+          <ul class="checks">
+            <li>WCAG tooling shipped to Corpowid customers</li>
+            <li>Keyboard, focus and screen-reader first</li>
+            <li>This page included — try Tab</li>
+          </ul>
+        </article>
+
+        <article class="tile now t-4" aria-labelledby="now-label">
+          <p class="mono dim" id="now-label">Most recently</p>
+          <h2 class="tile-title">Front-End Developer</h2>
+          <p class="dim">Gocreative · built the Corpowid product’s frontend architecture from scratch.</p>
+          <p class="mono now-years">2021 — 2026</p>
+        </article>
+      </section>
+
+      <!-- Work -->
+      <section class="block" id="work" aria-labelledby="work-title">
+        <header class="block-head">
+          <h2 id="work-title">Selected work</h2>
+          <p class="mono dim"><span class="js-work-count">11</span> live projects · tap any tile to open it</p>
+        </header>
+        <ol class="bento work-grid"></ol>
+      </section>
+
+      <!-- About -->
+      <section class="block" id="about" aria-labelledby="about-title">
+        <header class="block-head">
+          <h2 id="about-title">About</h2>
+          <p class="mono dim">Background &amp; working style</p>
+        </header>
+        <div class="bento">
+          <article class="tile about-copy t-7">
+            <p class="lead">Nearly five years in, I still care most about the part of the product people touch.</p>
+            <p class="dim">I like reusable component systems, predictable state, and catching performance bottlenecks before they ship. I work closely with designers and backend engineers, review code with an eye for risk, and write the Jest and Playwright tests that let a team move without fear.</p>
+            <p class="dim">Accessibility isn’t a checklist at the end — it’s how the components are built from the start.</p>
+          </article>
+
+          <article class="tile t-5" aria-labelledby="years-title">
+            <p class="mono dim" id="years-title">Through the years</p>
+            <ol class="timeline">
+              <li><span class="mono">’15</span>Computer Engineering · Azerbaijan Technical University</li>
+              <li><span class="mono">’19</span>Graduated in Computer Engineering</li>
+              <li><span class="mono">’21</span>Matrix Academy front-end course · mentored the next cohort</li>
+              <li><span class="mono">’21</span>Joined Gocreative · agency client projects</li>
+              <li><span class="mono">’24</span>Corpowid · frontend architecture from scratch</li>
+              <li><span class="mono">’26</span>Art Riverfront · latest launch</li>
+            </ol>
+          </article>
+
+          <article class="tile vitals t-12" aria-label="Vitals">
+            <dl>
+              <div><dt class="mono dim">Most recently</dt><dd>Front-End Developer<span>Gocreative · Corpowid product</span></dd></div>
+              <div><dt class="mono dim">Before that</dt><dd>Agency client work<span>Hospitality, real estate, government, brands</span></dd></div>
+              <div><dt class="mono dim">Based in</dt><dd>Baku, Azerbaijan<span>40.4093° N · 49.8671° E</span></dd></div>
+              <div><dt class="mono dim">Focus</dt><dd>Accessibility · Performance<span>Component architecture, testing</span></dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="block" id="experience" aria-labelledby="exp-title">
+        <header class="block-head">
+          <h2 id="exp-title">Experience</h2>
+          <p class="mono dim">Five years of production front-end</p>
+        </header>
+        <div class="bento">
+          <article class="tile role-main t-7">
+            <p class="mono accent">2024 — 2026</p>
+            <h3 class="tile-title big">Front-End Developer</h3>
+            <p class="mono dim">Gocreative · Corpowid, internal startup product</p>
+            <p>Built the frontend architecture of Corpowid from scratch, making scalable structure and maintainability the foundation of the codebase, with reusable UI components that keep the product responsive and fast.</p>
+            <p class="dim">Designed and delivered the accessibility solutions that help customers make their websites WCAG-compliant — deep, hands-on work in accessibility, performance and privacy — in close collaboration with backend engineers and UI/UX designers.</p>
+          </article>
+          <div class="stack-col t-5">
+            <article class="tile role">
+              <p class="mono accent">2021 — 2026</p>
+              <h3 class="tile-title">Front-End Developer</h3>
+              <p class="mono dim">Gocreative · agency client projects</p>
+            </article>
+            <article class="tile role">
+              <p class="mono accent">2021</p>
+              <h3 class="tile-title">Mentor</h3>
+              <p class="mono dim">Matrix Academy · front-end course</p>
+            </article>
+          </div>
+
+          <article class="tile skills t-12" aria-labelledby="skills-title">
+            <h3 class="mono dim" id="skills-title">Toolkit</h3>
+            <dl>
+              <div><dt>Core</dt><dd>React, TypeScript, Next.js, JavaScript (ES6+), HTML5, CSS3, responsive design</dd></div>
+              <div><dt>Architecture</dt><dd>Reusable component libraries, scalable frontend structure, component-driven design</dd></div>
+              <div><dt>State</dt><dd>Redux Toolkit, Zustand, Context API</dd></div>
+              <div><dt>Styling</dt><dd>Tailwind CSS, SCSS, GSAP, Figma-to-code implementation</dd></div>
+              <div><dt>Quality</dt><dd>Performance optimisation, WCAG-compliant solutions, Jest, React Testing Library, Playwright</dd></div>
+              <div><dt>Process</dt><dd>Webpack, Vite, Git, JIRA, Scrum, code reviews, UAT</dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="block" id="contact" aria-labelledby="contact-title">
+        <div class="bento">
+          <article class="tile contact t-12">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <p class="chip"><span class="pulse" aria-hidden="true"></span>Contact</p>
+            <h2 class="contact-title" id="contact-title">Let’s build<br /><span class="dim">what’s next.</span></h2>
+            <div class="row">
+              <a class="btn btn-light btn-lg" href="mailto:parvanauluxanova@gmail.com">parvanauluxanova@gmail.com <span aria-hidden="true">→</span></a>
+              <button class="btn btn-lg js-copy" type="button" data-copy="parvanauluxanova@gmail.com">Copy email</button>
+              <a class="btn btn-lg" href="https://github.com/pervaneuluxan" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-lg" href="https://www.linkedin.com/in/pervane-uluxanova-8309a3202/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="sr-only" aria-live="polite" id="copy-status"></p>
+          </article>
+        </div>
+        <footer class="foot mono dim">
+          <span>© 2026 Pərvanə Uluxanova</span>
+          <span>Built with Vite, vanilla JS and care for a11y</span>
+          <a href="#top">Back to top ↑</a>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
